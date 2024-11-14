@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* p {
+            color: black;
+        } */
+
+        h1 {
+            /* !important : 인라인보다 우선순위 높음*/
+            color: brown !important;
+        }
+
+        /* p {
+
+            color: blue;
+        } */
+
+        .orange {
+            color: orange;
+        }
+
+        #pink {
+            color: pink;
+        }
+
+        div {
+            color: blueviolet;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <!-- green이 적용 X -> !important 우선순위가 더 높음 -->
+        <h1 style="color:green">레드향</h1>
+        <!-- p inner style color blue 보다 우선순위 높음 -->
+        <p style="color:red">
+            껍질에 붉은 빛이 돌아 레드향이라 불린다.
+        </p>
+        <!-- p, class 보다 id 선택자 우선순위 높아서 pink-->
+        <p id="pink" class="orange">
+            껍질에 붉은 빛이 돌아 레드향이라 불린다.
+        </p>
+        <p class="orange">
+            일반 귤보다 2~3배 크고, 과육이 붉고 통통하다.
+        </p>
+        <p>
+            일반 귤보다 2~3배 크고, 과육이 붉고 통통하다.
+        </p>
+    </div>
+</body>
+
+</html>
