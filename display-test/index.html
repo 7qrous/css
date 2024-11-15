@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>display test</title>
+    <style>
+        ul {
+            /* 불릿이나 숫자, 이미지 없앰 */
+            list-style: none;
+        }
+
+        ul li {
+            /* block 레벨 성격과 inline레벨 성격을 동시에 가짐 */
+            display: inline-block;
+            width: 100px;
+            height: 40px;
+
+            /* 글자 수직 가운데 정렬 */
+            line-height: 40px;
+
+            /* 글자 수평 가운데 정렬*/
+            text-align: center;
+            margin: 10px;
+            border: 1px solid black;
+        }
+
+        a {
+            text-decoration: none;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h3>display 속성</h3>
+    <nav>
+        <ul>
+            <li><a href="#"> menu1 </a></li>
+            <li><a href="#"> menu2 </a></li>
+            <li><a href="#"> menu3 </a></li>
+            <li><a href="#"> menu4 </a></li>
+        </ul>
+    </nav>
+</body>
+
+</html>
