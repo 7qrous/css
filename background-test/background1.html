@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background 교재 실습</title>
+    <style>
+        #background_color {
+            background-color: tomato;
+            margin-top: 50px;
+            font-size: 80px;
+            text-align: center;
+        }
+
+        .clipDiv {
+            border: 5px dotted black;
+            background-color: bisque;
+            width: 350px;
+            padding: 20px;
+            margin-right: 20px;
+            /* float: left; */
+        }
+
+        #clip-border {
+            background-clip: border-box;
+        }
+
+        #clip-padding {
+            background-clip: padding-box;
+        }
+
+        #clip-content {
+            background-clip: content-box;
+        }
+
+        .divSize {
+            width: 100%;
+            height: 500px;
+        }
+
+        #background_image {
+            background-color: black;
+            background-image: url('images/dot.png');
+            /* background-repeat: no-repeat; */
+            /* background-repeat: repeat-x; */
+            background-repeat: repeat-y;
+        }
+
+        ul {
+            list-style: none;
+            margin-left: -30px;
+        }
+
+        .listBg {
+            padding-left: 25px;
+            line-height: 30px;
+            background-image: url('images/dot.png');
+            background-position: left center;
+            background-repeat: no-repeat;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>Background-COlor 속성</h3>
+    <h1 id="background_color">do it!</h1>
+    <hr>
+    <h3>Background-Clip 속성</h3>
+    <div id="clip-border" class="clipDiv">
+        <h1>제목</h1>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia quaerat sapiente, omnis aliquam ad fugiat!
+            Ut dolorem laudantium facilis culpa optio temporibus laborum nemo, voluptates nobis facere dolorum unde.
+            Aut.
+        </p>
+    </div>
+    <div id="clip-padding" class="clipDiv">
+        <h1>제목</h1>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia quaerat sapiente, omnis aliquam ad fugiat!
+            Ut dolorem laudantium facilis culpa optio temporibus laborum nemo, voluptates nobis facere dolorum unde.
+            Aut.
+        </p>
+    </div>
+    <div id="clip-content" class="clipDiv">
+        <h1>제목</h1>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia quaerat sapiente, omnis aliquam ad fugiat!
+            Ut dolorem laudantium facilis culpa optio temporibus laborum nemo, voluptates nobis facere dolorum unde.
+            Aut.
+        </p>
+    </div>
+    <hr>
+    <h3>
+        background-image 속성
+    </h3>
+    <div id="background_image" class="divSize">
+
+    </div>
+    <hr>
+    <h3>
+        background-position 속성
+    </h3>
+    <ul>
+        <li class="listBg">회사 소개</li>
+        <li class="listBg">도서</li>
+        <li class="listBg">자료실</li>
+        <li class="listBg">동영상 강의</li>
+    </ul>
+</body>
+
+</html>
