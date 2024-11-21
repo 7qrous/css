@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        .container2 {
+            float: left;
+            width: 500px;
+            height: 500px;
+            display: flex;
+            flex-flow: row wrap;
+            border: 1px solid black;
+            margin: 30px;
+        }
+
+        .box {
+            padding: 5px 45px;
+            margin: 5px;
+            width: 80px;
+            margin: 30px;
+        }
+
+        .box:nth-child(odd) {
+            background-color: gold;
+        }
+
+        .box:nth-child(even) {
+            background-color: green;
+        }
+
+        p {
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .wide {
+            width: 100%;
+        }
+
+        #content1 {
+            align-content: flex-start;
+        }
+
+        #content2 {
+            align-content: flex-end;
+        }
+
+        #content3 {
+            align-content: center;
+        }
+
+        #content4 {
+            align-content: flex-start;
+        }
+
+        #content5 {
+            align-content: space-between;
+            /* space-evenly */
+        }
+
+        #content6 {
+            align-content: stretch;
+        }
+    </style>
+</head>
+
+<body>
+    <h3> align-content, flex: wrap 인해 여러 row가 있을때 배치</h3>
+    <div class="container2" id="content1">
+        <div class="box">
+            <p>1</p>
+        </div>
+        <div class="box">
+            <p>2</p>
+        </div>
+        <div class="box">
+            <p>3</p>
+        </div>
+        <div class="box">
+            <p>4</p>
+        </div>
+    </div>
+    <div class="container2" id="content2">
+        <div class="box">
+            <p>1</p>
+        </div>
+        <div class="box">
+            <p>2</p>
+        </div>
+        <div class="box">
+            <p>3</p>
+        </div>
+        <div class="box">
+            <p>4</p>
+        </div>
+    </div>
+    <div class="container2" id="content3">
+        <div class="box">
+            <p>1</p>
+        </div>
+        <div class="box">
+            <p>2</p>
+        </div>
+        <div class="box">
+            <p>3</p>
+        </div>
+        <div class="box">
+            <p>4</p>
+        </div>
+    </div>
+    <div class="container2" id="content4">
+        <div class="box">
+            <p>1</p>
+        </div>
+        <div class="box">
+            <p>2</p>
+        </div>
+        <div class="box">
+            <p>3</p>
+        </div>
+        <div class="box">
+            <p>4</p>
+        </div>
+    </div>
+    <div class="container2" id="content5">
+        <div class="box">
+            <p>1</p>
+        </div>
+        <div class="box">
+            <p>2</p>
+        </div>
+        <div class="box">
+            <p>3</p>
+        </div>
+        <div class="box">
+            <p>4</p>
+        </div>
+    </div>
+    <div class="container2" id="content6">
+        <div class="box">
+            <p>1</p>
+        </div>
+        <div class="box">
+            <p>2</p>
+        </div>
+        <div class="box">
+            <p>3</p>
+        </div>
+        <div class="box">
+            <p>4</p>
+        </div>
+    </div>
+
+</body>
+
+</html>
