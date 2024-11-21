@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>flex-basis</title>
+    <title></title>
     <style>
         .container {
             width: 800px;
@@ -24,19 +24,39 @@
             background-color: #222;
             flex-basis: 150px;
         }
+
+        .wide {
+            width: 100%;
+        }
+        
+        #grow1{
+            flex-grow:1;
+        }
+        #grow2{
+            flex-grow:1;
+        }
+        #grow3{
+            flex-grow:0;
+        }
+        #grow4{
+            flex-grow:2;
+        }
     </style>
 </head>
 
 <body>
-    <div class="container">
-        <div class="box">
-            <p>가나다라</p>
+    <div class="container wide">
+        <div id="grow1" class="box">
+            <p>1</p>
         </div>
-        <div class="box">
-            <p>가나다라마바사</p>
+        <div id="grow2" class="box">
+            <p>2</p>
         </div>
-        <div class="box">
-            <p>ABCDEFG</p>
+        <div id="grow3" class="box">
+            <p>3</p>
+        </div>
+        <div id="grow4" class="box">
+            <p>4</p>
         </div>
     </div>
 </body>

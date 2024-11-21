@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>flex-basis</title>
+    <title></title>
     <style>
         .container {
             width: 800px;
@@ -24,19 +24,42 @@
             background-color: #222;
             flex-basis: 150px;
         }
+
+        .wide {
+            width: 100%;
+        }
+
+        #shrink1 {
+            flex-shrink: 1;
+        }
+
+        #shrink2 {
+            flex-shrink: 0;
+        }
+
+        #shrink3 {
+            flex-shrink: 1;
+        }
+
+        #shrink4 {
+            flex-shrink: 2;
+        }
     </style>
 </head>
 
 <body>
-    <div class="container">
-        <div class="box">
-            <p>가나다라</p>
+    <div class="container wide">
+        <div id="shrink1" class="box">
+            <p>1</p>
         </div>
-        <div class="box">
-            <p>가나다라마바사</p>
+        <div id="shrink2" class="box">
+            <p>2</p>
         </div>
-        <div class="box">
-            <p>ABCDEFG</p>
+        <div id="shrink3" class="box">
+            <p>3</p>
+        </div>
+        <div id="shrink4" class="box">
+            <p>4</p>
         </div>
     </div>
 </body>
