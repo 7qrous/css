@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudo class test</title>
+    <link rel="stylesheet" href="css/pclass.css"/>
+</head>
+<body> 
+    <div class="container">
+        <nav class="navi">
+            <ul>
+                <li><a href="pclass1.html#intro">이용 안내</a></li>
+                <li><a href="pclass1.html#room">객실 소개</a></li>
+                <li><a href="pclass1.html#reservation">예약 방법 및 요금</a></li>
+                <li><a href="pclass2.html">예약 안내</a></li>
+            </ul>
+        </nav>
+    </div>
+    <form id="signup" method="get">
+        <fieldset>
+            <legend>개인정보</legend>
+            <ul>
+                <li>
+                    <label for="fullname">이&nbsp;&nbsp;&nbsp;름</label>
+                    <input type="text" name="fullname" id="fullname" required />
+                </li>
+                <li>
+                    <label for="tel">연락처</label>
+                    <input id="tel" disabled name="tel" type="tel"/>
+                </li>
+            </ul>
+        </fieldset>
+        <fieldset>
+            <legend>객실형태</legend>
+            <ul>
+                <li><input type="radio" name="asdf" id="asdf1"><label for="asdf1">기본형(최대 2인)</label></li>
+                <li><input type="radio" name="asdf" id="asdf2"><label for="asdf2">가족형(최대 8인)</label></li>
+            </ul>
+        </fieldset>
+        <button type="submit">제출</button>
+    </form>
+</body>
+</html>
