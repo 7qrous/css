@@ -10,6 +10,7 @@
             width: 800px;
             height: 200px;
             margin: 20px auto;
+
         }
 
         .origin {
@@ -26,6 +27,10 @@
             height: 100px;
             background-color: orange;
             transition: 1s;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
         }
 
         #movex:hover {
@@ -39,19 +44,121 @@
         #movexy:hover {
             transform: translate(50px, 50px);
         }
+
+        #movez:hover {
+            transform: translateZ(50px);
+
+        }
+
+        #movexyz:hover {
+            transform: translate3d(50px, 50px, 50px);
+
+        }
+
+        #scalex:hover {
+            transform: scaleX(2);
+        }
+
+        #scaley:hover {
+            transform: scaleY(2);
+        }
+
+        #scalexy:hover {
+            transform: scale(0.5);
+        }
+
+        #rotate:hover {
+            transform: rotate(-30deg);
+        }
+
+        #pers {
+            perspective: 300px;
+        }
+
+        .rotatex:hover {
+            transform: rotateX(50deg);
+        }
+
+        .rotatey:hover {
+            transform: rotateY(50deg);
+        }
+
+        .rotatez:hover {
+            transform: rotateZ(50deg);
+        }
+
+        .rotatexyz:hover {
+            transform: rotate3d(2.5, 1.2, -1.5, 55deg);
+            /*  vector  + deg*/
+
+        }
+
+        .skewx:hover {
+            transform: skewX(30deg);
+        }
+
+        .skewy:hover {
+            transform: skewY(30deg);
+        }
+
+        .skew:hover {
+            transform: skew(30deg, 30deg);
+        }
     </style>
 </head>
 
 <body>
     <div class="container">
         <div class="origin">
-            <div id="movex"></div>
+            <div id="movex">move x</div>
         </div>
         <div class="origin">
-            <div id="movey"></div>
+            <div id="movey">move y</div>
         </div>
         <div class="origin">
-            <div id="movexy"></div>
+            <div id="movexy">move xy</div>
+        </div>
+        <div class="origin">
+            <div id="movez">move z</div>
+        </div>
+        <div class="origin">
+            <div id="movexyz">move xyz</div>
+        </div>
+        <div class="origin">
+            <div id="scalex">scale x</div>
+        </div>
+        <div class="origin">
+            <div id="scaley">scale y</div>
+        </div>
+        <div class="origin">
+            <div id="scalexy">scale xy 0.5</div>
+        </div>
+        <div class="origin">
+            <div id="rotate">rotate</div>
+        </div>
+        <div class="origin">
+            <div class="rotatex">none perspective, rotate x</div>
+        </div>
+        <div class="origin" id="pers">
+            <div class="rotatex">rotate x</div>
+        </div>
+        <div class="origin" id="pers">
+            <div class="rotatey">rotate y</div>
+        </div>
+        <div class="origin" id="pers">
+            <div class="rotatez">rotate z</div>
+        </div>
+        <div class="origin" id="pers">
+            <div class="rotatexyz">rotate xyz</div>
+        </div>
+        <div class="origin" id="pers">
+            <div class="skewx">skewx</div>
+        </div>
+        <div class="origin" id="pers">
+            <div class="skewy">skewy</div>
+        </div>
+        <div class="origin" id="pers">
+            <div class="skew">skew xy</div>
         </div>
     </div>
 </body>
