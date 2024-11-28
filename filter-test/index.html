@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 채도 2배로 */
+    </style>
+    <style>
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 10px;
+        }
+
+        .gallery img {
+            width: 80%;
+            border-radius: 50%;
+        }
+
+        .title {
+            font-weight: bold;
+            margin-bottom: 20px;
+            text-align: center;
+
+        }
+
+        .blur {
+            filter: blur(5px);
+        }
+
+
+        .brightness {
+            filter: brightness(2);
+        }
+
+        .contrast {
+            filter: contrast(200%);
+        }
+
+        .drop-shadow {
+            filter: drop-shadow(16px 16px 10px black);
+        }
+
+        .grayscale {
+            filter: grayscale(100%);
+        }
+
+        .invert {
+            filter: invert(100%);
+        }
+
+        .sepia {
+            /* 
+              전체 색상을 세피아 톤으로
+              따뜻한 갈색 음영의 색상 톤
+             */
+            filter: sepia(100%);
+        }
+
+        .opacity {
+            filter: opacity(50%);
+        }
+
+        .hue-rotate {
+            filter: hue-rotate(90deg);
+            /*모든 hue 값을 90도 이동 : hsl*/
+            /*
+                hue : 0' ~ 360'나타내는 색상
+            */
+        }
+
+        .saturate {
+            filter: saturate(200%);
+        }
+
+        .image-container {
+            border: 1px solid gray;
+            padding: 10px;
+            border-radius: 10px;
+            background: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="origin">
+        <img style="border-radius:50%;width:25%" src="https://picsum.photos/id/684/150/100">
+    </div>
+    <div class="gallery">
+        <div class="image-container">
+            <div class="title">blur(5px)</div>
+            <img src="https://picsum.photos/id/684/600/400" class="blur">
+        </div>
+        <div class="image-container">
+            <div class="title">brightness(2)</div>
+            <img src="https://picsum.photos/id/684/600/400" class="brightness">
+        </div>
+        <div class="image-container">
+            <div class="title">filter: contrast(200%)</div>
+            <img src="https://picsum.photos/id/684/600/400" class="contrast">
+        </div>
+        <div class="image-container">
+            <!--  가로, 세로, 번짐정도, 색상  -->
+            <div class="title"> filter: drop-shadow (16px 16px 10px black) </div>
+            <img src="https://picsum.photos/id/684/600/400" class="drop-shadow">
+        </div>
+        <div class="image-container">
+            <div class="title">filter: grayscale(100%)</div>
+            <img src="https://picsum.photos/id/684/600/400" class="grayscale">
+        </div>
+        <div class="image-container">
+            <div class="title">filter: invert(100%)</div>
+            <img src="https://picsum.photos/id/684/600/400" class="invert">
+        </div>
+        <div class="image-container">
+            <div class="title">filter: sepia(100%)</div>
+            <img src="https://picsum.photos/id/684/600/400" class="sepia">
+        </div>
+        <div class="image-container">
+            <div class="title">filter: opacity(50%)</div>
+            <img src="https://picsum.photos/id/684/600/400" class="opacity">
+        </div>
+        <div class="image-container">
+            <div class="title">filter: hue-rotate(90deg)</div>
+            <img src="https://picsum.photos/id/684/600/400" class="hue-rotate">
+        </div>
+        <div class="image-container">
+            <div class="title">filter: saturate(200%)</div>
+            <img src="https://picsum.photos/id/684/600/400" class="saturate">
+        </div>
+</body>
+
+</html>

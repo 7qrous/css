@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root {
+            --main-bg-color: pink;
+        }
+
+        body {
+            background-color: var(--main-bg-color);
+        }
+
+        #p1::first-letter {
+            font-size: 2em;
+            font-weight: bold;
+            color: red;
+        }
+
+        #p2::first-line {
+            font-size: 2em;
+            font-weight: bold;
+            color: blue;
+        }
+
+        h1 {
+            position: relative;
+        }
+
+        h1::before {
+            content: "*";
+            color: red;
+            margin-right: 5px;
+        }
+
+        h1::after {
+            content: "";
+            width: 10px;
+            position: absolute;
+            height: 10px;
+            background-image: url("dot.png");
+            background-size: cover;
+            background-position: center;
+            margin-left: 10px;
+        }
+
+        .heading_calc {
+            /* width: 100%; */
+            width: calc(100% - 80px);
+            margin: auto;
+            background-color: black;
+            color: white;
+            padding: 10px;
+            font-weight: bold;
+            text-align: center;
+            text-shadow: 2px 2px 2px black;
+        }
+
+        .heading_min {
+            /* width: 100%; */
+            width: min(100%, 700px);
+            margin: auto;
+            background-color: black;
+            color: white;
+            padding: 10px;
+            font-weight: bold;
+            text-align: center;
+            text-shadow: 2px 2px 2px black;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .heading_max h1 {
+            font-size: max(3vw, 2em);
+        }
+
+        .heading_clamp {
+            font-size: clamp(1rem, 2vw, 2rem);
+            /* 1rem = 16px ( chrome기준 : font-size지정하지 않았을 때  ) */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>css 가상 요소</h1>
+        <p id="p1">
+            가상 요소를 사용하면 css로 시각적으로 변화를 줄 수 있습니다. 이는 성능을 저하시키지 않으면서 웹 페이지를 꾸밀수 있는 효율적인 방법입니다.
+        </p>
+        <p id="p2">
+            가상 요소를 사용하면 css로 시각적으로 변화를 줄 수 있습니다. 이는 성능을 저하시키지 않으면서 웹 페이지를 꾸밀수 있는 효율적인 방법입니다.
+        </p>
+    </div>
+    <hr>
+    <div class="heading_calc">
+        <h1>css 함수</h1>
+    </div>
+    <div class="heading_min">
+        <h1>css 함수</h1>
+    </div>
+    <div class="heading_max">
+        <h1>css 함수</h1>
+    </div>
+    <div class="heading_clamp">
+        <h1>css 함수</h1>
+    </div>
+</body>
+
+</html>
